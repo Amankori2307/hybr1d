@@ -6,7 +6,6 @@ function SearchBox({ setPosts, setIsLoading, isLoading }) {
     const [query, setQuery] = useState("");
     const onSearch = (e) => {
         if (isLoading) return;
-        console.log(isLoading, "Logged")
         e.preventDefault()
         setIsLoading(true)
         getPosts(query).then((data, err) => {

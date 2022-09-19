@@ -16,6 +16,9 @@ function Post({ post }) {
       </div>
       <div className={styles.postDetails}>
         <div className={styles.postDetailsItem}>
+          <div className={styles.text}>{post.author} </div>
+        </div>
+        <div className={styles.postDetailsItem}>
           <div className={styles.text}>{post.points} Points</div>
         </div>
         <div className={styles.postDetailsItem}>
@@ -23,9 +26,6 @@ function Post({ post }) {
         </div>
         <div className={styles.postDetailsItem}>
           <div className={styles.text}>{moment(post.created_at).fromNow()}</div>
-        </div>
-        <div className={styles.postDetailsItem}>
-          <div className={styles.text}>{post.author} </div>
         </div>
       </div>
     </div>
