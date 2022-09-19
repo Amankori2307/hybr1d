@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import { getPosts } from '../../../services'
-import styles from './SearchBox.module.css'
+import React, { useState } from 'react';
+import { getPosts } from '../../../services';
+import styles from './SearchBox.module.css';
 
-function SearchBox({setPosts, setIsLoading, isLoading}) {
+function SearchBox({ setPosts, setIsLoading, isLoading }) {
     const [query, setQuery] = useState("");
     const onSearch = (e) => {
-        if(isLoading) return;
+        if (isLoading) return;
         console.log(isLoading, "Logged")
         e.preventDefault()
         setIsLoading(true)
         getPosts(query).then((data, err) => {
             setIsLoading(false);
-            if(data.status === 200){
+            if (data.status === 200) {
                 setPosts(data.data.hits)
             }
         })
@@ -23,7 +23,7 @@ function SearchBox({setPosts, setIsLoading, isLoading}) {
 
     return (
         <form className={styles.searchWrapper} onSubmit={onSearch}>
-            <input type="input" value={query} onChange={onChange} className={styles.searchInput}    >
+            <input type="input" value={query} onChange={onChange} className={styles.searchInput} placeholder="Search..."/>
             <input type="button" value="Search" className={styles.searchBtn} />
         </form>
     )

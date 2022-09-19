@@ -42,3 +42,16 @@
     font-size: 14px;
     color: #888;
 }
+
+@media screen and (max-width: 600px) {
+    .storyText{
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .link{
+        font-size: 14px;
+    }
+    .postDetails{
+        padding: 0rem;
+    }
+}
