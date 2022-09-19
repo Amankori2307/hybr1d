@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/hybr1d/static/css/main.4f72306e.css",
+    "main.js": "/hybr1d/static/js/main.38ac3a63.js",
+    "static/media/loading.gif": "/hybr1d/static/media/loading.1a32f552ee5280e2aef9.gif",
+    "index.html": "/hybr1d/index.html",
+    "main.4f72306e.css.map": "/hybr1d/static/css/main.4f72306e.css.map",
+    "main.38ac3a63.js.map": "/hybr1d/static/js/main.38ac3a63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f72306e.css",
+    "static/js/main.38ac3a63.js"
+  ]
+}
