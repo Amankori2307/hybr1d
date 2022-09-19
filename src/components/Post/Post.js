@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from './Post.module.css'
-import moment from 'moment'
+import moment from 'moment';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import styles from './Post.module.css';
 
 function Post({ post }) {
   let navigate = useNavigate();

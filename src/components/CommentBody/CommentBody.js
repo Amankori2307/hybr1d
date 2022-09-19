@@ -1,11 +1,11 @@
-import React from 'react'
-import styles from './CommentBody.module.css'
+import HTMLReactParser from 'html-react-parser';
+import React from 'react';
+import styles from './CommentBody.module.css';
 
-
-function CommentBody({comment}) {
+function CommentBody({ comment }) {
   return (
     <div className={styles.commentBody}>
-        {comment.text}
+      {HTMLReactParser(comment.text || "")}
     </div>
   )
 }
