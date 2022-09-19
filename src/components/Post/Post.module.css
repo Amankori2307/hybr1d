@@ -1,0 +1,44 @@
+.post{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.authorWrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+    font-weight: bold;
+}
+.authorIcon{
+    width: 24px;
+    height: auto;
+}
+
+.link{
+    color: #999;
+    font-size: 15px;
+}
+.title{
+    font-weight: bold;
+}
+.storyText{
+    padding: 0rem 2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.2rem;
+}
+.postDetails{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem;
+    column-gap: 1rem;
+}
+.icon{
+    width: 14px;
+    height: auto;
+}
+.text{
+    font-size: 14px;
+    color: #888;
+}

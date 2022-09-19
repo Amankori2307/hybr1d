@@ -8,6 +8,7 @@ import Loading from "../Loading/Loading"
 const Home = () => {
     const [posts, setPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+
     useEffect(() => {
         setIsLoading(true)
         getPosts().then((data, err) => {
