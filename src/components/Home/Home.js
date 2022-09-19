@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
-import styles from './Home.module.css'
-import Post from "../Post/Post"
-import SearchBox from "../SearchBox/SearchBox"
 import { getPosts } from "../../services"
 import Loading from "../Loading/Loading"
+import styles from './Home.module.css'
+import PostList from "./PostList/PostList"
+import SearchBox from "./SearchBox/SearchBox"
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
@@ -18,17 +18,16 @@ const Home = () => {
             }
         })
     }, [])
+
     return <div className={styles.home}>
-        <SearchBox setPosts={setPosts}></SearchBox>
-        {
-            isLoading ?
-                <Loading /> :
-                <div className={styles.main}>
-                    {
-                        posts.map((post, index) => <Post key={index} post={post}></Post>)
-                    }
-                </div>
-        }
+        <SearchBox setPosts={setPosts} setIsLoading={setIsLoading} isLoading={isLoading}></SearchBox>
+        <div className={styles.main}>
+            {
+                isLoading ?
+                    <Loading /> :
+                    <PostList posts={posts} />
+            }
+        </div>
 
     </div>
 }
