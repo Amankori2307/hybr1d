@@ -7,10 +7,6 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <a href="/">Home</a>
-      <a href="/post/adfadfasdf">Detail Post</a>
-
-
       <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/post/:postId" element={<DetailPost/>}></Route>
