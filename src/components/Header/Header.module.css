@@ -4,11 +4,12 @@
     width: 100%;
     padding: 0.8rem 2rem;
     background-color: #232323;
-    color: white;
     box-shadow: 1px 3px 3px 0px rgba(0,0,0,0.3);
 }
 .logo {
     font-size: 32px;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
 }

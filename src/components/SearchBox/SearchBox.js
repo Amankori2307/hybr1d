@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getPosts } from '../../../services';
+import { getPosts } from '../../services';
 import styles from './SearchBox.module.css';
 
 function SearchBox({ setPosts, setIsLoading, isLoading }) {

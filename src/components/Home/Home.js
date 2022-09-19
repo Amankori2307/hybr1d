@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react"
 import { getPosts } from "../../services"
 import Loading from "../Loading/Loading"
 import styles from './Home.module.css'
-import PostList from "./PostList/PostList"
-import SearchBox from "./SearchBox/SearchBox"
+import PostList from "../PostList/PostList"
+import SearchBox from "../SearchBox/SearchBox"
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
