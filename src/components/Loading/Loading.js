@@ -4,7 +4,7 @@ import styles from './Loading.module.css'
 function Loading() {
   return (
     <div className={styles.loadingWrapper}>
-        <img src={loadingImg} className={styles.loadingImg} alt="loading"/>
+      <img src={loadingImg} className={styles.loadingImg} alt="loading" />
     </div>
   )
 }

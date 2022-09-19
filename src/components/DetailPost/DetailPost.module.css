@@ -1,14 +1,15 @@
-.detailPost{
+.detailPost {
     padding: 2rem 1rem;
 }
 
-.btnWrapper{
+.btnWrapper {
     margin-bottom: 1rem;
     display: flex;
     padding: 0rem 2rem;
     justify-content: flex-end;
 }
-.btn{
+
+.btn {
     background: white;
     border: 1px solid black;
     padding: 0.5rem 1.5rem;

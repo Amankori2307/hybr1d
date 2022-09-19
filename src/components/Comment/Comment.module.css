@@ -1,7 +1,8 @@
-.comment{
+.comment {
     padding: 2rem 2rem 0rem;
 }
-.commentBodyWrapper{
+
+.commentBodyWrapper {
     display: flex;
     flex-direction: row;
     column-gap: 0.5rem;

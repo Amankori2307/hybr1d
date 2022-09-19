@@ -1,60 +1,69 @@
-.post{
+.post {
     width: 100%;
     margin-bottom: 2rem;
     color: black;
     text-decoration: none;
     display: block;
 }
-.authorWrapper{
+
+.authorWrapper {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
     align-items: center;
     font-weight: bold;
 }
-.authorIcon{
+
+.authorIcon {
     width: 24px;
     height: auto;
 }
 
-.link{
+.link {
     color: #999;
     font-size: 15px;
 }
-.title{
+
+.title {
     font-weight: bold;
 }
-.storyText{
+
+.storyText {
     padding: 0rem 2rem;
     margin-bottom: 0.2rem;
     display: flex;
     flex-direction: row;
     column-gap: 0.2rem;
 }
-.postDetails{
+
+.postDetails {
     display: flex;
     flex-direction: row;
     padding: 0rem 2rem;
     column-gap: 1rem;
 }
-.icon{
+
+.icon {
     width: 14px;
     height: auto;
 }
-.text{
+
+.text {
     font-size: 14px;
     color: #888;
 }
 
 @media screen and (max-width: 600px) {
-    .storyText{
+    .storyText {
         flex-direction: column;
         padding: 0rem;
     }
-    .link{
+
+    .link {
         font-size: 14px;
     }
-    .postDetails{
+
+    .postDetails {
         padding: 0rem;
     }
 }

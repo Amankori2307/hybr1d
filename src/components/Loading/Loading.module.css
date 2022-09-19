@@ -1,4 +1,4 @@
-.loadingWrapper{
+.loadingWrapper {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.loadingImg{
+.loadingImg {
     width: 250px;
     height: auto;
 }

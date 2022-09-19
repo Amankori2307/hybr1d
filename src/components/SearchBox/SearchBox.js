@@ -22,7 +22,7 @@ function SearchBox({ setPosts, setIsLoading, isLoading }) {
 
     return (
         <form className={styles.searchWrapper} onSubmit={onSearch}>
-            <input type="input" value={query} onChange={onChange} className={styles.searchInput} placeholder="Search..."/>
+            <input type="input" value={query} onChange={onChange} className={styles.searchInput} placeholder="Search..." />
             <input type="button" value="Search" className={styles.searchBtn} />
         </form>
     )

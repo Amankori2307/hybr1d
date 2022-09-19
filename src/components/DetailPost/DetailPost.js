@@ -4,7 +4,7 @@ import { getPost } from "../../services";
 import CommentList from "../CommentList/CommentList";
 import Loading from "../Loading/Loading";
 import Post from "../Post/Post";
-import styles from './DetailPost.module.css'
+import styles from './DetailPost.module.css';
 
 const DetailPost = () => {
     const { postId } = useParams();
@@ -24,7 +24,7 @@ const DetailPost = () => {
 
     const goBack = () => {
         navigate(-1);
-    }  
+    }
 
     return <>
         {
